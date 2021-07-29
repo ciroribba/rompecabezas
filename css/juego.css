@@ -1,0 +1,193 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+@font-face {
+  font-family: "Simpson";
+  src: url("../fonts/Simpsonfont.otf");
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/simpson.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+  border-right: 5px solid #ffcc00;
+}
+
+.col-60 {
+  background: white;
+}
+
+#flecha{
+  font-size: 50px;
+  color: #EC6778;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+
+.juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*Mi código*/
+h1{
+  font-family: "Simpson";
+}
+.juego {
+  width: 540px;
+  height: 540px;
+}
+
+.juego .pieza {
+ width: 33%;
+ height: 33%;
+ float: left;
+}
+.pieza img{
+  width: 100%;
+}
+.img-objetivo {
+  width: 140px;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid  #E84A5F;
+}
+#lista-instrucciones li{
+  font-size: 12px;
+}
+.pieza {
+  background-color: #ffcc00;
+}
+#section-dos,
+#section-uno
+{
+  display: none;
+  border: 5px solid #ffcc00;
+}
+#intro{
+  display: block;
+}
+@keyframes miAnimacion{
+    0%{
+        transform: translateX(-120%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateX(20%);
+        opacity: 1;
+        }
+}
+
+#section-dos img{
+    width: 50%;
+    animation: miAnimacion 1s forwards 0s linear;
+    vertical-align: middle;
+}
+
+#izquierda,
+#centro,
+#derecha
+{
+  width: 33%;
+  height: 300px;
+  background-color: transparent;
+  float: left;
+}
+#izquierda img,
+#centro img,
+#derecha img{
+  width: 90%;
+  border: 5px solid #ffcc00;
+  cursor: pointer;
+}
+#izquierda img:hover,
+#centro img:hover,
+#derecha img:hover{
+  border: 5px solid #E84A5F;
+}
+#titulo-intro{
+  width: 28%;
+  height: 30px;
+  text-align: center;
+  background-color: white;
+  padding: 10px 8px 0px 8px;
+  margin-bottom: 10px;
+  color: #E84A5F;
+  font-weight: 100;
+  border: 5px solid #ffcc00;
+  font-family: "Simpson"; 
+}
+#titulo-intro img{
+  vertical-align: middle;
+  width: 10%;
+}
+#section-dos{
+  background-image: url(../images/casa.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  font-family: "Simpson";
+  color: yellow;
+  font-size: 2.5em;
+}
+@keyframes miAnimacion2{
+    0%{
+        opacity: 0;
+      }
+    100%{
+        opacity: 1;
+        }
+}
+#section-dos div span{
+  background-color: yellow;
+  color: #E84A5F;
+  font-family: "Arial";
+  font-size: 12px;
+  padding: 3px;
+  cursor: pointer;
+  animation: miAnimacion2 2s forwards 0s linear;
+}
+#section-dos div span:hover {
+  background-color:#E84A5F ;
+  color: yellow;
+}
+
+
+
+
+

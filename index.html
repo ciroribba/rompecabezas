@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+    <audio id="demo" source src="audio/TheSimpsonsRemix.mp3" type="audio/mpeg" loop></audio>
+    <section id="intro">
+    <!--comienza pantalla intro juego-->
+      <div id="titulo-intro">
+        <img src="images/donut-png.png"> Selecciona Rompecabezas        
+      </div>
+      <div id="izquierda">
+        <img src="images/maggie.jpg" onclick="lanzarJuego(maggie,'maggie')" alt="maggie">
+      </div>
+      <div id="centro">
+        <img src="images/bart.jpg" onclick="lanzarJuego(bart,'bart')" alt="bart">
+      </div>
+      <div id="derecha">
+        <img src="images/lisa.jpg" onclick="lanzarJuego(lisa,'lisa')" alt="lisa">
+      </div>
+    <!--finaliza pantalla intra juego-->
+    </section>
+    <section id="section-uno">
+      <!--comienza pantalla juego-->
+      <div class="col-40">
+      
+        <div id="titulo">
+          <h1>Rompecabezas</h1>
+        </div>
+        <div id="instrucciones">
+          <p>Instrucciones</p>
+          <ul id="lista-instrucciones">
+          </ul>
+        </div>
+        <div id="objetivo">
+          <p>Objetivo</p>
+          <div class="texto-centrado">
+            <img src="images/maggie.jpg" alt="imagen final Maggie" class="img-objetivo" id="maggie" >          
+            <img src="images/bart.jpg" alt="imagen final Bart" class="img-objetivo" id="bart">            
+            <img src="images/lisa.jpg" alt="imagen final Lisa" class="img-objetivo" id="lisa">
+          </div>
+        </div>
+        <div id="ultimo-mov">
+          <p>Ultimo Movimiento</p>
+          <div id="flecha" class="texto-centrado">            
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-60">
+        <div  class="juego" >
+          <div id="pieza1" class="pieza">
+            <img src="#" alt="pieza1" id="img1">
+          </div>
+          <div id="pieza2" class="pieza">
+            <img src="#" alt="pieza2" id="img2">
+          </div>
+          <div id="pieza3" class="pieza">
+            <img src="#" alt="pieza3" id="img3">
+          </div>
+          <div id="pieza4" class="pieza">
+            <img src="#" alt="pieza4" id="img4">
+          </div>
+          <div id="pieza5" class="pieza">
+            <img src="#" alt="pieza5" id="img5">
+          </div>
+          <div id="pieza6" class="pieza">
+            <img src="#" alt="pieza6" id="img6">
+          </div>
+          <div id="pieza7" class="pieza">
+            <img src="#" alt="pieza7" id="img7">
+          </div>
+          <div id="pieza8" class="pieza">
+            <img src="#" alt="pieza8" id="img8">
+          </div>
+          <div id="pieza9" class="pieza">            
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="footer">
+        
+      </div>
+      <!--finaliza pantalla juego-->
+  </section>
+  <section id="section-dos">
+    <!--comienza pantalla ganador-->
+    <div>
+      <img src="images/myh.png" alt="marge y homero">
+      Has Ganado!!! <span onclick="location.reload()">Volver a jugar</span>
+    </div>
+    <!--finaliza pantalla pantalla ganador-->
+  </section>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
